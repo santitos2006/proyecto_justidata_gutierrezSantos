@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Informes - JustiData</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carga_informe.html">Cargar Informe</a></li>
+                <li><a href="busqueda.html">Buscar Informes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>Búsqueda de Informes de Pericias</h2>
+
+        <form action="ver_informe.html" method="GET">
+            <label for="organismo">Organismo Solicitante:</label><br>
+            <input type="text" id="organismo" name="organismo" placeholder="Ej: Juzgado Civil N° 1"><br><br>
+
+            <label for="num_pericia">Número de Pericia / Expediente:</label><br>
+            <input type="text" id="num_pericia" name="num_pericia" placeholder="Ej: 452/2026"><br><br>
+
+            <label for="tipo_pericia">Tipo de Pericia:</label><br>
+            <select id="tipo_pericia" name="tipo_pericia">
+                <option value="">-- Todos los tipos --</option>
+                <option value="medica">Médica</option>
+                <option value="psicologica">Psicológica</option>
+                <option value="informatica">Informática</option>
+                <option value="contable">Contable</option>
+            </select><br><br>
+
+            <input type="submit" value="Buscar">
+            <input type="reset" value="Limpiar Filtros">
+        </form>
+
+        <br>
+        <h3>Resultados de la búsqueda (Ejemplo)</h3>
+        <!-- Tabla con resultados previos de la consulta -->
+        <table border="1">
+            <tr>
+                <th>N° Pericia</th>
+                <th>Organismo</th>
+                <th>Tipo</th>
+                <th>Estado</th>
+                <th>Acción</th>
+            </tr>
+            <tr>
+                <td>452/2026</td>
+                <td>Juzgado Civil N° 1</td>
+                <td>Informática</td>
+                <td>En proceso de evaluación</td>
+                <td><a href="ver_informe.html">Ver Detalle</a></td>
+            </tr>
+        </table>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>JustiData Solutions S.A. - Sistema de Gestión de Pericias</p>
+    </footer>
+
+</body>
+</html>

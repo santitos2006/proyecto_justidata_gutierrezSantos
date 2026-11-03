@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga de Nuevo Informe - JustiData</title>
+</head>
+<body>
+
+    <!-- Menú de navegación básico para moverse entre pantallas -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carga_informe.html">Cargar Informe</a></li>
+                <li><a href="busqueda.html">Buscar Informes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Contenido Principal: Formulario de carga -->
+    <main>
+        <h2>Formulario de Carga de Nuevo Informe</h2>
+        
+        <form action="#" method="POST">
+            <!-- Número de Pericia (Combinación Organismo + Número según su TP) -->
+            <label for="organismo">Organismo Solicitante:</label><br>
+            <input type="text" id="organismo" name="organismo" placeholder="Ej: Juzgado Civil N° 1"><br><br>
+
+            <label for="num_pericia">Número de Pericia:</label><br>
+            <input type="text" id="num_pericia" name="num_pericia" placeholder="Ej: 452/2026"><br><br>
+
+            <!-- Tipo de Pericia -->
+            <label for="tipo_pericia">Tipo de Pericia:</label><br>
+            <select id="tipo_pericia" name="tipo_pericia">
+                <option value="medica">Médica</option>
+                <option value="psicologica">Psicológica</option>
+                <option value="informatica">Informática</option>
+                <option value="contable">Contable</option>
+            </select><br><br>
+
+            <!-- Descripción del informe -->
+            <label for="descripcion">Descripción del Informe / Actuación:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="40" placeholder="Ingrese los detalles técnicos..."></textarea><br><br>
+
+            <!-- Botón de envío -->
+            <input type="submit" value="Guardar Informe">
+        </form>
+    </main>
+
+    <hr>
+    <footer>
+        <p>JustiData Solutions S.A. - Sistema de Gestión de Pericias</p>
+    </footer>
+
+</body>
+</html>
